@@ -1,0 +1,52 @@
+.headerWrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    box-shadow: 0 2px 8px rgba(126, 120, 120, 0.15);
+    padding: 1%;
+
+  
+
+  }
+  
+  .headerLeft {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .breadcrumb {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    color: grey;
+    font-size: 0.6rem;
+  }
+  
+  .link {
+    color: grey;
+  }
+  
+  .separator {
+    color: grey;
+  }
+  
+  .active {
+    font-weight: 600;
+    color: black;
+  }
+  
+  .headerRight {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  

@@ -1,0 +1,19 @@
+/* src/components/forms/PlatformForm/AgentTypeSelector.module.css */
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.label {
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+
+.required {
+  color: red;
+  margin-left: 4px;
+}
+
+.select {
+  width: 100%;
+}

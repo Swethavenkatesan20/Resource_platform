@@ -1,0 +1,61 @@
+.PlatformForm {
+    padding: 1.5rem;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  }
+  
+  /* Tabs Container */
+  .tab {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid #d9d9d9;
+  }
+  
+  .tabButton {
+    background: none;
+    border: none;
+    font-size: 1rem;
+    padding: 0.75rem 1.25rem;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    color: #595959;
+    transition: all 0.3s ease;
+  }
+  
+  .tabButton:hover {
+    color: #1677ff;
+  }
+  
+  .tabButton.active {
+    border-bottom: 2px solid #1677ff;
+    color: #1677ff;
+    font-weight: 600;
+  }
+  
+  /* Tab Content */
+  .tabContent {
+    margin-top: 1rem;
+  }
+  
+  /* Form Layout (Mobile-Responsive Fixes) */
+  @media screen and (max-width: 768px) {
+    .PlatformForm {
+      padding: 1rem;
+    }
+  
+    .tab {
+      flex-direction: column;
+    }
+  
+    .tabButton {
+      width: 100%;
+      text-align: left;
+    }
+  
+    .tabContent :global(.ant-col) {
+      margin-bottom: 1rem;
+    }
+  }
+  

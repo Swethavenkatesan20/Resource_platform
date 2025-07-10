@@ -1,0 +1,18 @@
+.selector {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .label {
+    font-weight: 500;
+    color: #333;
+    font-size: 14px;
+  }
+  
+  .select :global(.ant-select-selector) {
+    height: 40px;
+    align-items: center;
+    display: flex;
+  }
+  

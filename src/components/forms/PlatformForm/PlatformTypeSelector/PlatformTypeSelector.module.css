@@ -1,0 +1,40 @@
+/* src/components/forms/PlatformForm/PlatformTypeSelector.module.css */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .label {
+    font-weight: 500;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .radioGroup :global(.ant-radio-button-wrapper) {
+    border-radius: 4px;
+    padding: 0 16px;
+    margin: 2px 0;
+    height: 40px;
+    line-height: 38px;
+    font-size: 14px;
+    background-color: #fafafa;
+  }
+  
+  .radioGroup :global(.ant-radio-button-wrapper-checked) {
+    background-color: #1890ff;
+    color: #fff;
+    border-color: #1890ff;
+  }
+  
+  .radioGroup :global(.ant-radio-button-wrapper:not(:first-child)) {
+    margin-left: 8px;
+  }
+  
+  .radioGroup :global(.ant-radio-button-wrapper:hover) {
+    color: white;
+    border-color: white;
+    background-color: #1890ff;
+  }
+  
