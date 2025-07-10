@@ -1,0 +1,69 @@
+{
+  "platforms": [
+    {
+      "id": "7fac",
+      "agentType": "windows",
+      "resource": "res_2_1_1",
+      "dbObject": "table",
+      "alternativeResources": []
+    },
+    {
+      "id": "297d",
+      "agentType": "windows",
+      "resource": "res_6",
+      "dbObject": "schema",
+      "alternativeResources": []
+    },
+    {
+      "id": "88f5",
+      "platformName": "test",
+      "agentType": "windows",
+      "resource": "res_2_2",
+      "dbObject": "schema",
+      "alternativeResources": []
+    },
+    {
+      "id": "1fb9",
+      "platformName": "test1",
+      "agentType": "windows",
+      "resource": "res_6",
+      "dbObject": "schema",
+      "alternativeResources": []
+    },
+    {
+      "id": "d682",
+      "platformName": "testING",
+      "agentType": "mac",
+      "resource": "res_6",
+      "dbObject": "view",
+      "alternativeResources": []
+    },
+    {
+      "id": "64b5",
+      "platformName": "testING",
+      "agentType": "mac",
+      "resource": "res_6",
+      "dbObject": "view",
+      "alternativeResources": []
+    },
+    {
+      "id": "7184",
+      "platformName": "testshy",
+      "agentType": "windows",
+      "resource": "res_6",
+      "dbObject": "schema",
+      "alternativeResources": []
+    },
+    {
+      "id": "df23",
+      "platformName": "testy",
+      "agentType": "windows",
+      "resource": "res_6",
+      "dbObject": "schema",
+      "alternativeResources": [
+        "res-8",
+        "res-8.1"
+      ]
+    }
+  ]
+}

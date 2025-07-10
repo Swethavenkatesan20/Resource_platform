@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useRef, useState } from 'react';
 import { Layout } from 'antd';
 import Sidebar from '../../components/layout/Sidebar/Sidebar';
 import TopBar from '../../components/layout/TopBar/TopBar';
@@ -16,8 +16,21 @@ const breadcrumbs = [
   ];
 
 const AddPlatform = () => {
+  const formRef = useRef();
   const [collapsed, setCollapsed] = useState(false);
   const [activeSidebar, setActiveSidebar] = useState('settings');
+
+  const handleSave = () => {
+    if (formRef.current) {
+      formRef.current.handleSave();
+    }
+  };
+
+  const handleCancel = () => {
+    if (formRef.current) {
+      formRef.current.handleCancel();
+    }
+  };
 
   return (
     <Layout style={{ minHeight: '100vh' }}>
@@ -34,8 +47,9 @@ const AddPlatform = () => {
         <Content className={styles.content}>
           {activeSidebar === 'settings' ? (
             <>
-              <PageHeader title="PLATFORM" breadcrumbs={breadcrumbs}/>
-               <PlatformForm /> 
+              <PageHeader title="PLATFORM" breadcrumbs={breadcrumbs} onSave={handleSave}
+        onCancel={handleCancel}/>
+               <PlatformForm ref={formRef}/> 
             </>
           ) : (
             <div style={{ padding: '2rem', fontSize: '1.2rem' }}>

@@ -3,12 +3,12 @@ import { Tree, Tag } from 'antd';
 import styles from './AlternativeResourceTree.module.css';
 import { resourceTreeData } from '../../../../utils/treeData';
 
-const AlternativeResourceTree = () => {
-  const [selectedKeys, setSelectedKeys] = useState([]);
+const AlternativeResourceTree = ({ selected = [], onChange }) => {
+ // const [selectedKeys, setSelectedKeys] = useState([]);
   const [expandedKeys, setExpandedKeys] = useState([]);
 
   const handleCheck = (checkedKeys) => {
-    setSelectedKeys(checkedKeys);
+    onChange(checkedKeys); //  Send back to parent
   };
 
   const handleExpand = (keys) => {
@@ -20,8 +20,8 @@ const AlternativeResourceTree = () => {
       <label className={styles.label}>Alternative Resource</label>
 
       <div className={styles.selectionBox}>
-        {selectedKeys.length > 0 ? (
-          selectedKeys.map((key) => (
+        {selected.length > 0 ? (
+          selected.map((key) => (
             <Tag key={key} className={styles.resourceTag}>
               {key.replace('res-', 'Resource ')}
             </Tag>
@@ -37,12 +37,12 @@ const AlternativeResourceTree = () => {
           showIcon
           selectable={false}
           treeData={resourceTreeData}
-          checkedKeys={selectedKeys}
+          checkedKeys={selected}
           onCheck={handleCheck}
           expandedKeys={expandedKeys}
           onExpand={handleExpand}
           blockNode
-          showLine={{ showLeafIcon: false }} // ✅ built-in + / - toggler
+          showLine={{ showLeafIcon: false }} 
         />
       </div>
     </div>
