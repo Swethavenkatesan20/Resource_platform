@@ -1,5 +1,4 @@
 
-import './App.css'
 import PageHeader from './components/layout/PageHeader/PageHeader'
 import Sidebar from './components/layout/Sidebar/Sidebar'
 import TopBar from './components/layout/TopBar/TopBar'
