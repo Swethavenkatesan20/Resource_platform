@@ -1,4 +1,3 @@
-// src/components/forms/PlatformForm/ResourceDropdown.jsx
 import React from 'react';
 import { Select } from 'antd';
 import styles from './ResourceDropdown.module.css';
@@ -24,8 +23,11 @@ const ResourceDropdown = ({ value, onChange }) => {
         placeholder="Select Resource"
         className={styles.select}
         size="large"
-        popupClassName={styles.dropdown}
-      >
+        classNames={{
+          popup: {
+            root: 'my-style',
+          },
+        }}      >
         {resources.map((resource) => (
           <Option key={resource.value} value={resource.value}>
             {resource.label}

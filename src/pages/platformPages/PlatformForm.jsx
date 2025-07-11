@@ -1,12 +1,12 @@
 import React, { forwardRef, useImperativeHandle, useState } from 'react';
 import { Form, Row, Col } from 'antd';
 import styles from './PlatformForm.module.css';
-import PlatformNameInput from './PlatformForm/PlatformNameInput/PlatformNameInput';
-import PlatformTypeSelector from './PlatformForm/PlatformTypeSelector/PlatformTypeSelector';
-import AgentTypeSelector from './PlatformForm/AgentTypeSelector/AgentTypeSelector';
-import ResourceDropdown from './PlatformForm/ResourceDropdown/ResourceDropdown';
-import DatabaseObjectSelector from './PlatformForm/DatabaseObjectSelector/DatabaseObjectSelector';
-import AlternativeResourceTree from './PlatformForm/AlternativeResourceTree/AlternativeResourceTree';
+import PlatformNameInput from '../../components/forms/PlatformForm/PlatformNameInput/PlatformNameInput';
+import PlatformTypeSelector from '../../components/forms/PlatformForm/PlatformTypeSelector/PlatformTypeSelector';
+import AgentTypeSelector from '../../components/forms/PlatformForm/AgentTypeSelector/AgentTypeSelector';
+import ResourceDropdown from '../../components/forms/PlatformForm/ResourceDropdown/ResourceDropdown';
+import DatabaseObjectSelector from '../../components/forms/PlatformForm/DatabaseObjectSelector/DatabaseObjectSelector';
+import AlternativeResourceTree from '../../components/forms/PlatformForm/AlternativeResourceTree/AlternativeResourceTree';
 import { postPlatformData } from '../../services/platformService';
 
 //forwardRef allows parent to call internal methods

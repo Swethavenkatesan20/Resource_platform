@@ -1,4 +1,3 @@
-// src/components/forms/PlatformForm/AgentTypeSelector.jsx
 import React from 'react';
 import { Select } from 'antd';
 import styles from './AgentTypeSelector.module.css';

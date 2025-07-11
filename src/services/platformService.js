@@ -1,4 +1,3 @@
-// services/platformService.js
 import api from './api';
 
 export const postPlatformData = async (payload) => {

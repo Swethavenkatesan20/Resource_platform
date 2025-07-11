@@ -5,7 +5,7 @@ import TopBar from '../../components/layout/TopBar/TopBar';
 import PageHeader from '../../components/layout/PageHeader/PageHeader';
 //  import PlatformForm from '../../components/forms/PlatformForm/PlatformForm';
 import styles from './AddPlatform.module.css';
-import PlatformForm from '../../components/forms/PlatformForm';
+import PlatformForm from '../platformPages/PlatformForm';
 
 const { Content } = Layout;
 const breadcrumbs = [
@@ -15,7 +15,7 @@ const breadcrumbs = [
     { label: 'Add New Platform', active: true },
   ];
 
-const AddPlatform = () => {
+const AddPlatformLayout = () => {
   const formRef = useRef();
   const [collapsed, setCollapsed] = useState(false);
   const [activeSidebar, setActiveSidebar] = useState('settings');
@@ -62,4 +62,4 @@ const AddPlatform = () => {
   );
 };
 
-export default AddPlatform;
+export default AddPlatformLayout;

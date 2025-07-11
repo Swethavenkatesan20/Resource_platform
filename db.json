@@ -64,6 +64,59 @@
         "res-8",
         "res-8.1"
       ]
+    },
+    {
+      "id": "f942",
+      "platformName": "maintanence ",
+      "agentType": "windows",
+      "resource": "res_2_1_1",
+      "dbObject": "schema",
+      "alternativeResources": [
+        "res-8",
+        "res-8.1"
+      ]
+    },
+    {
+      "id": "30ba",
+      "platformName": "test1",
+      "agentType": "windows",
+      "resource": "res_2_1_1",
+      "dbObject": "table",
+      "alternativeResources": [
+        "res-8",
+        "res-8.1"
+      ]
+    },
+    {
+      "id": "2ecb",
+      "platformName": "wwe",
+      "agentType": null,
+      "resource": null,
+      "dbObject": null,
+      "alternativeResources": [
+        "res-8",
+        "res-8.1"
+      ]
+    },
+    {
+      "id": "42e5",
+      "platformName": "karthiga",
+      "agentType": "windows",
+      "resource": "res_2_1_1",
+      "dbObject": "schema",
+      "alternativeResources": [
+        "res-8",
+        "res-8.1",
+        "res-2.1.1"
+      ]
+    },
+    {
+      "id": "2ca8",
+      "platformName": "sss",
+      "agentType": null,
+      "resource": null,
+      "dbObject": null,
+      "alternativeResources": []
     }
   ]
 }

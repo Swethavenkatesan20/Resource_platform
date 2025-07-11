@@ -1,4 +1,3 @@
-// src/components/forms/PlatformForm/PlatformTypeSelector.jsx
 
 import React from 'react';
 import { Radio } from 'antd';

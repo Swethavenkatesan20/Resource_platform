@@ -1,4 +1,3 @@
-/* src/components/forms/PlatformForm/PlatformTypeSelector.module.css */
 
 .container {
     display: flex;
@@ -9,7 +8,7 @@
   .label {
     font-weight: 500;
     font-size: 14px;
-    color: #333;
+    color: #8418ff;
   }
   
   .radioGroup :global(.ant-radio-button-wrapper) {
@@ -23,9 +22,9 @@
   }
   
   .radioGroup :global(.ant-radio-button-wrapper-checked) {
-    background-color: #1890ff;
+    background-color: #8418ff;
     color: #fff;
-    border-color: #1890ff;
+    border-color: #8418ff;
   }
   
   .radioGroup :global(.ant-radio-button-wrapper:not(:first-child)) {
@@ -35,6 +34,6 @@
   .radioGroup :global(.ant-radio-button-wrapper:hover) {
     color: white;
     border-color: white;
-    background-color: #1890ff;
+    background-color: #8418ff;
   }
   

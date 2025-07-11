@@ -1,7 +1,7 @@
 .sidebar {
     height: 100vh;
     position: fixed;
-    top: 60px; /* Adjust this to match TopBar height */
+    top: 60px; 
     left: 0;
     background-color: #fff;
     box-shadow: 1px 0 5px rgba(0, 0, 0, 0.1);
@@ -32,3 +32,23 @@
     align-items: center;
     justify-content: center;
   }
+
+  .custom-sidebar-menu {
+    background-color: #8418ff !important;
+  }
+  
+  .custom-sidebar-menu .ant-menu-item,
+  .custom-sidebar-menu .ant-menu-submenu-title {
+    color: #fff !important;
+  }
+  
+  .custom-sidebar-menu .ant-menu-item-selected {
+    background-color: #6a10cc !important;
+    color: #fff !important;
+  }
+  
+  .custom-sidebar-menu .ant-menu-item:hover {
+    background-color: #7320d4 !important;
+    color: #fff !important;
+  }
+  

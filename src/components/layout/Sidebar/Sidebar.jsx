@@ -55,6 +55,7 @@ const Sidebar = ({ collapsed, onCollapse, activeKey, onSelect }) => {
       color: 'white',
       fontWeight: 'bold',
       fontSize: collapsed ? '1rem' : '1.2rem',
+      
     }}
   >
     <span role="img" aria-label="logo">🏢</span>
@@ -62,23 +63,19 @@ const Sidebar = ({ collapsed, onCollapse, activeKey, onSelect }) => {
   </div>
 
   <Menu
-    mode="inline"
-    selectedKeys={[activeKey]}
-    theme="dark"
-    style={{ borderRight: 0 }}
-    onClick={({ key }) => onSelect(key)}
-  >
-    {menuItems.map((item) => (
-      <Menu.Item
-        key={item.key}
-        icon={item.icon}
-        title={item.label}
-        className={collapsed ? 'collapsed-item' : ''}
-      >
-        {!collapsed ? item.label : <div style={{ fontSize: '0.6rem', marginTop: '0.25rem' }}>{item.label}</div>}
-      </Menu.Item>
-    ))}
-  </Menu>
+  mode="inline"
+  selectedKeys={[activeKey]}
+  theme="dark"
+  onClick={({ key }) => onSelect(key)}
+  items={menuItems.map((item) => ({
+    key: item.key,
+    icon: item.icon,
+    label: collapsed ? '' : item.label,
+    title: item.label, // For tooltip when collapsed
+  }))}
+  style={{ borderRight: 0 }}
+/>
+
 
   <div
     style={{
