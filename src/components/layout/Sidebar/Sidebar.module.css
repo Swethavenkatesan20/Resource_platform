@@ -1,12 +1,13 @@
 .sidebar {
-  height: 100vh;
+  height: 100vh; 
   position: fixed;
   top: 60px;
   left: 0;
-  background-color: #fff;
+  width: 150px;
+  background-color: #4000a0;
   box-shadow: 1px 0 5px rgba(0, 0, 0, 0.1);
   transition: all 0.2s;
-  z-index: 100;
+  z-index: 1101;
 }
 
 .logoArea {
@@ -38,7 +39,7 @@
   bottom: 0;
   width: 100%;
   height: 50px;
-  background-color: #490066;
+  background-color: #510ece;
   /* 🔵 Change footer background color here */
   display: flex;
   align-items: center;
@@ -55,4 +56,37 @@
 
 .ant-layout-sider-trigger {
   display: none !important;
+}
+
+/* Sidebar.module.css */
+.sider {
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  background: rgb(65, 9, 170);
+  z-index: 1000;
+}
+
+
+.menu {
+  border-right: 0;
+  background: rgb(65, 9, 170);
+}
+
+.collapseButtonContainer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding: 0.5rem;
+  background: rgb(65, 9, 170);
+}
+
+.collapseButton {
+  border: none;
+  background: transparent;
+  color: #fff;
+  cursor: pointer;
 }

@@ -39,7 +39,8 @@ const AddPlatformLayout = () => {
       <Layout
         className={styles.mainLayout}
         style={{
-          marginLeft: collapsed ? 80 : 150,
+          marginLeft: collapsed ? 60 : 150,
+          marginTop: 50,
           transition: 'margin-left 0.3s ease',
         }}
       >

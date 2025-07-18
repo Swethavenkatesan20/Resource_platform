@@ -12,7 +12,7 @@ const PlatformNameInput = ({ value, onChange, error }) => {
       name="platformName"
       rules={[{ required: true, message: 'Please enter platform name' }]}
     >
-      <Input placeholder="Enter platform name" />
+      <Input className={styles.input} placeholder="Enter platform name" />
     </Form.Item>
   );
 };

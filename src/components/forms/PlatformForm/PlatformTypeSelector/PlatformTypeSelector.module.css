@@ -8,7 +8,7 @@
   .label {
     font-weight: 500;
     font-size: 14px;
-    color: #8418ff;
+    color: #510ece;
   }
   
   .radioGroup :global(.ant-radio-button-wrapper) {
@@ -22,9 +22,9 @@
   }
   
   .radioGroup :global(.ant-radio-button-wrapper-checked) {
-    background-color: #8418ff;
+    background-color: #510ece;
     color: #fff;
-    border-color: #8418ff;
+    border-color: #510ece;
   }
   
   .radioGroup :global(.ant-radio-button-wrapper:not(:first-child)) {
@@ -34,6 +34,6 @@
   .radioGroup :global(.ant-radio-button-wrapper:hover) {
     color: white;
     border-color: white;
-    background-color: #8418ff;
+    background-color: #510ece;
   }
   

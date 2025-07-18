@@ -1,4 +1,3 @@
-/* src/pages/AddPlatform/AddPlatform.module.css */
 
 .mainLayout {
     transition: margin-left 0.3s ease;
@@ -6,10 +5,10 @@
   }
   
 .content {
-    /* padding: 2rem; */
-    margin-top: 60px; /* to account for TopBar */
+     /* padding: 2rem;  */
+    margin-top: 35px; 
     transition: margin-left 0.3s ease;
-    min-height: calc(100vh - 60px); /* so it fills remaining space */
+    min-height: calc(100vh - 60px); 
     background-color: white;
   }
   

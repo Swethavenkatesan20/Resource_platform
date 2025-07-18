@@ -6,7 +6,7 @@
   
   .label {
     font-weight: 500;
-    color: #8418ff;
+    color: #510ece;
     margin-bottom: 6px;
   }
   
@@ -20,12 +20,12 @@
   
   :global(.ant-select-selector) {
     border-radius: 6px !important;
-    border-color: #8418ff;
-    background-color: #8418ff;
+    border-color: #510ece;
+    background-color: #510ece;
   }
   
   :global(.ant-select-focused .ant-select-selector) {
     box-shadow: 0 0 0 2px rgba(24, 144, 255, 0.2);
-    border-color: #8418ff;
+    border-color: #510ece;
   }
   

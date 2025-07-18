@@ -15,7 +15,8 @@ import {
   MenuUnfoldOutlined,
   MenuFoldOutlined,
 } from '@ant-design/icons';
-import '../Sidebar/Sidebar.module.css'
+import styles from './Sidebar.module.css'
+import '../../../index.css'
 
 const { Sider } = Layout;
 
@@ -31,43 +32,33 @@ const Sidebar = ({ collapsed, onCollapse, activeKey, onSelect }) => {
   ];
 
   return (
-    <Sider
+    <Sider className={styles.sider}
       collapsible
       collapsed={collapsed}
       trigger={null}
       onCollapse={onCollapse}
-      collapsedWidth={80}
+      collapsedWidth={60}
       width={150}
       breakpoint="lg"
       onBreakpoint={(broken) => onCollapse(broken)}
-      style={{
-        height: '100vh',
-        position: 'fixed',
-        left: 0,
-        top: 0,
-        bottom: 0,
-        background: '#8418ff',
-        zIndex: 1000,
-      }}
+      // style={{
+      //   height: '100vh',
+      //   position: 'fixed',
+      //   left: 0,
+      //   top: 0,
+      //   bottom: 0,
+      //   background: 'rgb(65, 9, 170)',
+      //   zIndex: 1000,
+      // }}
     >
-      <div
-        style={{
-          padding: '1rem',
-          textAlign: 'center',
-          color: 'white',
-          fontWeight: 'bold',
-          fontSize: collapsed ? '1rem' : '1.2rem',
+      
 
-        }}
-      >
-        <span role="img" aria-label="logo">🏢</span>
-        {!collapsed}
-      </div>
-
-      <Menu
+      <Menu 
         mode="inline"
         selectedKeys={[activeKey]}
         theme="dark"
+        className="custom-sidebar-menu"
+        // className={styles.customSidebarMenu}
         onClick={({ key }) => onSelect(key)}
         items={menuItems.map((item) => ({
           key: item.key,
@@ -75,29 +66,20 @@ const Sidebar = ({ collapsed, onCollapse, activeKey, onSelect }) => {
           label: collapsed ? '' : item.label,
           title: item.label, // For tooltip when collapsed
         }))}
-        style={{ borderRight: 0, background: '#8418ff' }}
+        style={{ borderRight: 0, background: 'rgb(65, 9, 170)' }}
       />
 
 
-      <div
-        style={{
-          position: 'absolute',
-          bottom: 0,
-          width: '100%',
-          textAlign: 'center',
-          padding: '0.5rem',
-          background:'#8418ff'
-        }}
-      >
-        <button
+      <div className={styles.collapseButtonContainer}>
+        <button className={styles.collapseButton}
           onClick={() => onCollapse(!collapsed)}
-          style={{
-            border: 'none',
-            background: 'transparent',
-            color: '#fff',
-            cursor: 'pointer',
+          // style={{
+          //   border: 'none',
+          //   background: 'transparent',
+          //   color: '#fff',
+          //   cursor: 'pointer',
 
-          }}
+          // }}
         >
           {collapsed ? <MenuUnfoldOutlined /> : <MenuFoldOutlined />}
         </button>

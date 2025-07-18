@@ -1,16 +1,20 @@
 import React from 'react';
-import { BellOutlined, UserOutlined } from '@ant-design/icons';
+import {
+  BellOutlined,
+  QuestionCircleOutlined,
+  UserOutlined,
+} from '@ant-design/icons';
 import styles from './TopBar.module.css';
 
 const TopBar = () => {
   return (
     <div className={styles.topBar}>
-      <div className={styles.left}>
-        <span role="img" aria-label="logo">🏢</span> <span className={styles.title}>Accounting</span>
-      </div>
-      <div className={styles.right}>
+      <div className={styles.rightContent}>
+        
+        <span className={styles.title}>Accounting</span>
+        <QuestionCircleOutlined className={styles.icon} />
         <BellOutlined className={styles.icon} />
-        <UserOutlined className={styles.icon} />
+        <div className={styles.avatar}>AU</div>
       </div>
     </div>
   );
